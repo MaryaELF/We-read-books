@@ -1,0 +1,4 @@
+{
+  "name": "Image Text Reader",
+  "description": "A React application that uses the Gemini API to extract and transcribe text from uploaded images, including handwritten content and mathematical equations."
+}
