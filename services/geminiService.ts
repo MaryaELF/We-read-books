@@ -18,6 +18,7 @@ export async function transcribeImage(
   }
 
   // Create a new GoogleGenAI instance for each call to ensure the latest API key is used.
+  const API_KEY = import.meta.env.VITE_GEMINI_API_KEY || process.env.GEMINI_API_KEY;
   const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
   try {
