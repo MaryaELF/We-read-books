@@ -20,6 +20,11 @@ export default defineConfig(({ mode }) => {
         alias: {
           '@': path.resolve(__dirname, '.'),
         }
+      },
+      build: {
+        outDir: 'dist',
+        sourcemap: false,
+        chunkSizeWarningLimit: 1600,
       }
     };
 });
